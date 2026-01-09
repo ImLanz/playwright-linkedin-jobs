@@ -12,6 +12,11 @@ import { defineConfig, devices } from '@playwright/test';
 /**
  * @see https://playwright.dev/docs/test-configuration
  */
+
+use: {
+  storageState: 'storageState.json'
+}
+
 export default defineConfig({
   testDir: './tests',
   /* Run tests in files in parallel */
